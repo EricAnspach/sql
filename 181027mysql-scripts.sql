@@ -19,3 +19,8 @@ values ('python', 'Murach''s Python Programming', '57.50'),
 ('vue', 'Murach''s Vue Framework', '52.50'),
 ('angular', 'Murach''s Angular', '52.50');
 
+select * from product where listprice < 55;
+
+select * from product order by code;
+
+select * from product order by listprice;
