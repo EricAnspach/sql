@@ -8,7 +8,7 @@ CREATE TABLE Movie (
   ID			        INT             PRIMARY KEY  AUTO_INCREMENT,
   Title           VARCHAR(100)    NOT NULL,
   Rating          VARCHAR(5)      NOT NULL,
-  Year            INT             NOT NULL
+  Year            INT             NOT NULL,
   Director        VARCHAR(50)     NOT NULL
 );
 
@@ -58,7 +58,9 @@ VALUES
   (6, 'Star Wars: The Last Jedi', 'PG-13', 2017, 'Rian Johnson'),
   (7, 'Inside Llewyn Davis', 'R', 2013, 'Ethan Coen'),
   (8, 'Drive', 'R', 2017, 'Nicholas Winding Refn'),
-  (9, 'The Ides of March', 'R', 2011, 'George Clooney');
+  (9, 'The Ides of March', 'R', 2011, 'George Clooney'),
+  (10, 'Broken Flowers', 'R', 2005, 'Jim Jarmusch'),
+  (11, 'In The Bedroom', 'R', 2001, 'Todd Field');
 
 -- insert some rows into the Genre table
 INSERT INTO Genre
@@ -99,7 +101,11 @@ VALUES
   (15, 'Adam', 'Driver', 'Male', '1983-11-19'),
   (16, 'John', 'Boyega', 'Male', '1992-3-17'),
   (17, 'Carey', 'Mulligan', 'Female', '1985-5-28'),
-  (18, 'Ryan', 'Gosling', 'Male', '1980-11-12');
+  (18, 'Ryan', 'Gosling', 'Male', '1980-11-12'),
+  (19, 'Jeffrey', 'Wright', 'Male', '1965-12-7'),
+  (20, 'Bill', 'Murrey', 'Male', '1950-9-21'),
+  (21, 'Sissy', 'Spacek', 'Female', '1949-12-25'),
+  (22, 'Marisa', 'Tomei', 'Female', '1964-12-4');
 
 -- insert some rows into the MovieGenre table
 INSERT INTO MovieGenre
@@ -107,7 +113,39 @@ INSERT INTO MovieGenre
 VALUES
   (1, 1),
   (1, 6),
-  (1, 9);
+  (1, 9),
+  (2, 6),
+  (2, 7),  
+  (2, 9),
+  (3, 6),
+  (3, 7),  
+  (3, 9),
+  (4, 1),
+  (4, 4),
+  (4, 7),
+  (4, 9),
+  (4, 11),
+  (5, 2),
+  (5, 6),
+  (5, 7),
+  (6, 2),
+  (6, 7),
+  (6, 11),
+  (6, 12),
+  (7, 1),
+  (7, 7),
+  (8, 5),
+  (8, 7),
+  (8, 9),
+  (9, 7),
+  (9, 8),
+  (9, 9),
+  (10, 1),
+  (10, 7),
+  (10, 8),
+  (10, 9),
+  (11, 7),
+  (11, 9);
 
 -- insert some rows into the Credit table
 INSERT INTO Credit
@@ -127,8 +165,30 @@ VALUES
   (4, 9, 'Author'),
   (3, 9, 'Arthur Edens'),
   (4, 10, 'Mr. Moustafa'),
-  (7, 10, 'Bud Grossman');
-
-
+  (7, 10, 'Bud Grossman'),
+  (10, 8, 'Penny'),
+  (11, 9, 'Matt Fowler'),
+  (4, 11, 'Deputy Kovacs'),
+  (5, 12, 'Ava'),
+  (5, 13, 'Caleb'),
+  (6, 13, 'General Hux'),
+  (5, 14, 'Nathan'),
+  (6, 14, 'Poe Dameron'),
+  (7, 14, 'Llewyn Davis'),
+  (8, 14, 'Standard'),
+  (6, 15, 'Kylo Ren'),
+  (7, 15, 'Al Cody'),
+  (6, 16, 'Finn'),
+  (7, 17, 'Jean'),
+  (8, 17, 'Irene'),
+  (8, 18, 'Driver'),
+  (9, 18, 'Stephen Meyers'),
+  (9, 19, 'Senator Thompson'),
+  (10, 19, 'Winston'),
+  (4, 20, 'M. Ivan'),
+  (10, 20, 'Don Johnston'),
+  (11, 21, 'Ruth Fowler'),
+  (9, 22, 'Ida Horowicz'),
+  (11, 22, 'Natalie Strout');
 
 -- create a user and grant privileges to that user
