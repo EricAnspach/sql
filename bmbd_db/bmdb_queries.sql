@@ -129,3 +129,12 @@ select concat(a.firstname," ", a.LastName) as "Name",
         &&
         m.rating = 'R'
         order by a.lastName;    
+        
+-- All credits with names concatenated    
+select m.title as "Movie Title",
+	g.name as "Genre"
+	from moviegenre mg
+    join genre g
+    on mg.genreID = g.ID
+    join movie m
+    on mg.movieID = m.ID;

@@ -22,6 +22,8 @@ CREATE TABLE user (
     CONSTRAINT uname UNIQUE (UserName)
 );
 
+
+
 CREATE TABLE vendor (
     ID                  INT            PRIMARY KEY  AUTO_INCREMENT,
     Code                VARCHAR(10)    NOT NULL,
@@ -57,7 +59,7 @@ CREATE TABLE purchaserequest (
     DateUpdated         DATETIME       DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP NOT NULL,
     UpdatedByUser       INT            DEFAULT 1    NOT NULL,
 
-    FOREIGN KEY (UserID) REFERENCES user(ID),
+    FOREIGN KEY (UserID) REFERENCES user(ID)
 );
 
 CREATE TABLE product (
@@ -93,7 +95,6 @@ CREATE TABLE purchaserequestlineitem (
 );
 
 INSERT INTO User
-  (ID, Title, Rating, Year, Director)
+    (ID, UserName, Password, FirstName, LastName, PhoneNumber, Email, IsReviewer, IsAdmin)
 VALUES
-  (1, 'In Bruges', 'R', 2008, 'Martin McDonagh'),
-  (11, 'In The Bedroom', 'R', 2001, 'Todd Field');
+    (1, 'eanspach', 'sesame', 'Eric', 'Anspach', '999-999-9999', 'eric.j.anspach@gmail.com', 1, 1);
