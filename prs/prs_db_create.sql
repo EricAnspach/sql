@@ -95,6 +95,19 @@ CREATE TABLE purchaserequestlineitem (
 );
 
 INSERT INTO User
-    (ID, UserName, Password, FirstName, LastName, PhoneNumber, Email, IsReviewer, IsAdmin)
+    (ID, UserName, Password, FirstName, LastName, PhoneNumber, Email, IsReviewer, IsAdmin, UpdatedByUser)
 VALUES
-    (1, 'eanspach', 'sesame', 'Eric', 'Anspach', '999-999-9999', 'eric.j.anspach@gmail.com', 1, 1);
+    (1, 'system', 'sesame', 'system', 'system', '999-999-9999', 'system@test.com', 1, 1, 1),
+	(2, 'eanspach', 'sesame', 'Eric', 'Anspach', '999-999-9999', 'eric.j.anspach@gmail.com', 1, 1, 1);
+    
+INSERT INTO Vendor
+    (ID, Code, Name, Address, City, State, Zip, PhoneNumber, Email, IsPreapproved)
+VALUES
+    (1, 'OFFI', 'Office Inc.', '123 Main St', 'Cincinnati', 'OH', 45201, 999-999-9999, 'test@test.com', 1),
+	(2, 'SUPP', 'Supplies Inc.', '123 Main St', 'Cincinnati', 'OH', 45201, 999-999-9999, 'test@test.com', 1);
+    
+INSERT INTO Product
+    (ID, VendorID, PartNumber, Name, Price, Unit, Photopath)
+VALUES
+    (1, 1, 00000, 'Widget', 1.99, 'Each', NULL),
+	(2, 2, 99999, 'Pencil', 0.99, 'Dozen', NULL);
