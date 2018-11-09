@@ -103,8 +103,12 @@ VALUES
 INSERT INTO Vendor
     (ID, Code, Name, Address, City, State, Zip, PhoneNumber, Email, IsPreapproved)
 VALUES
-    (1, 'OFFI', 'Office Inc.', '123 Main St', 'Cincinnati', 'OH', 45201, 999-999-9999, 'test@test.com', 1),
-	(2, 'SUPP', 'Supplies Inc.', '123 Main St', 'Cincinnati', 'OH', 45201, 999-999-9999, 'test@test.com', 1);
+    (1, 'APPL', 'Apple Computer Inc.', '1 Infinite Loop', 'Cupertino', 'CA', '95014', '408-996-1010', 'info@apple.com', 1),
+	(2, 'DOPP', 'JB Doppes Lumber Co.', '1001 Dalton Ave', 'Cincinnati', 'OH', '45203', '513-421-4850', 'doppes@gfuse.net', 1),
+    (3, 'MICR', 'Microcenter', '11755 Mosteller Rd', 'Sharonville', 'OH', '45241', '513-782-8500', 'info@Microcenter.com', 1),
+    (4, 'PLAZ', 'Plaza Art Materials', '230 W. McMillan St', 'Cincinnati', 'OH', '45219', '513-861-0667', 'plaza@plazaart.com', 1),
+    (5, 'AMAZ', 'Amazon', '410 Terry Ave N', 'Seattle', 'WA', '98109', '206-266-1000', 'jeff.bezos@amazon.com', 1),
+    (6, 'BEST', 'Best Buy', '7601 Penn Ave S', 'Richfield', 'MN', '55423', '612-291-1000', 'support@bestbuy.com', 1);
     
 INSERT INTO Product
     (ID, VendorID, PartNumber, Name, Price, Unit, Photopath)
