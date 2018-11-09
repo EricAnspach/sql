@@ -113,5 +113,21 @@ VALUES
 INSERT INTO Product
     (ID, VendorID, PartNumber, Name, Price, Unit, Photopath)
 VALUES
-    (1, 1, 00000, 'Widget', 1.99, 'Each', NULL),
-	(2, 2, 99999, 'Pencil', 0.99, 'Dozen', NULL);
+    (1, 1, 'A1921', 'iPhoneX Max', 1099.99, 'Each', NULL),
+	(2, 1, 'A1660', 'iPhone 7', 449.00, 'Each', NULL),
+    (3, 1, 'A1673', 'iPad 9.7 in', 329.00, 'Each', NULL),
+    (4, 1, 'MK452LL/A', 'iMac', 2299.00, 'Each', NULL),
+    (5, 2, 'DC9091', 'Dewalt Cordless Ni-CD 14.4 V Battery', 18.95, 'Each', NULL),
+    (6, 2, 'DCD940KX', 'DeWalt Cordless Drill 18V', 48.90, 'Each', NULL),
+    (7, 2, '280058', 'National Nail Drywall Screw #6x1', 4.89, 'Pound', NULL),
+    (8, 3, '1850', 'Microsoft Wireless Mouse', 12.99, 'Each', NULL),
+    (9, 3, '15-da0031nr', 'HP 15.6" Laptop Computer', 579.99, 'Each', NULL),
+    (10, 3, '64038010', 'Swiss Gear Mainframe Laptop Briefcase', 59.99, 'Each', NULL),
+    (11, 4, '344081', 'Koh-I-Noor Gioconda 24 Piece Pencil Set', 37.45, 'Each', NULL),
+    (12, 4, '175353', 'Strathmore 300 Series Bristol Pad Smooth 11x14', 13.75, 'Pad', NULL),
+    (13, 5, 'J701M/DS', 'Samsung Galaxy J7 Neo', 137.97, 'Each', NULL),
+    (14, 5, 'WF-3720', 'Epson Workforce Pro Color Inkjet Printer', 149.99, 'Each', NULL),
+    (15, 6, '1543', 'Nikon - D750 DSLR Camera', 1399.99, 'Each', NULL),
+    (16, 6, '910-005131', 'Logitech - MX Master 2S Wireless Laser Mouse', 72.99, 'Each', NULL);
+
+    
