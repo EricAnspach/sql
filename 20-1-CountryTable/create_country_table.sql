@@ -1,4 +1,7 @@
-DROP TABLE IF EXISTS Country;
+-- create and select the database
+DROP DATABASE IF EXISTS country;
+CREATE DATABASE country;
+USE country;
 
 CREATE TABLE Country
 (
@@ -11,7 +14,7 @@ INSERT INTO Country VALUES
 (2, 'Japan'),
 (3, 'Mexico'),
 (4, 'Spain'),
-(5, 'United States')
+(5, 'United States'),
 (6, 'Portugal');
 
 -- create A USER AND GRANT PRIVILEGES TO THAT USER

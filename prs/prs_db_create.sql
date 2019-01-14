@@ -130,4 +130,6 @@ VALUES
     (15, 6, '1543', 'Nikon - D750 DSLR Camera', 1399.99, 'Each', NULL),
     (16, 6, '910-005131', 'Logitech - MX Master 2S Wireless Laser Mouse', 72.99, 'Each', NULL);
 
-    
+    -- create A USER AND GRANT PRIVILEGES TO THAT USER
+create USER IF NOT EXISTS prs_user@localhost identified BY 'sesame';
+GRANT select, insert, delete, update on prs.* to prs_user@localhost;

@@ -1,4 +1,7 @@
-USE mma;
+-- create and select the database
+DROP DATABASE IF EXISTS customer;
+CREATE DATABASE customer;
+USE customer;
 
 DROP TABLE IF EXISTS Customer;
 
@@ -15,3 +18,7 @@ INSERT INTO Customer VALUES
 (4, 'Frank', 'Jones', 'frankjones@yahoo.com'), 
 (5, 'Cynthia', 'Green', 'seagreen@levi.com'), 
 (6, 'Wendy', 'Kowolski', 'wendyk@warners.com');
+
+-- create A USER AND GRANT PRIVILEGES TO THAT USER
+create USER IF NOT EXISTS customer_user@localhost identified BY 'sesame';
+GRANT select, insert, delete, update on customer.* to customer_user@localhost;
