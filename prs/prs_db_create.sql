@@ -95,7 +95,7 @@ CREATE TABLE purchaserequestlineitem (
 );
 
 INSERT INTO User
-    (ID, UserName, Password, FirstName, LastName, PhoneNumber, Email, IsReviewer, IsAdmin, UpdatedByUser)
+    (ID, UserName, Password, FirstName, LastName, PhoneNumber, Email, IsReviewer, IsAdmin, UpdatedByUser)DateUpdated
 VALUES
     (1, 'system', 'sesame', 'system', 'system', '999-999-9999', 'system@test.com', 1, 1, 1),
 	(2, 'eanspach', 'sesame', 'Eric', 'Anspach', '999-999-9999', 'eric.j.anspach@gmail.com', 1, 1, 1);
