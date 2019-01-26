@@ -46,7 +46,7 @@ CREATE TABLE vendor (
 CREATE TABLE purchaserequest (
     ID                  INT            PRIMARY KEY  AUTO_INCREMENT,
     UserID              INT            NOT NULL,
-    Desription          VARCHAR(100)   NOT NULL,
+    Description         VARCHAR(100)   NOT NULL,
     Justification       VARCHAR(255)   NOT NULL,
     DateNeeded          DATE           NOT NULL,
     DeliveryMode        VARCHAR(25)    NOT NULL,
