@@ -192,3 +192,5 @@ VALUES
   (11, 22, 'Natalie Strout');
 
 -- create a user and grant privileges to that user
+create user springuser@localhost identified by 'ThePassword'; -- Creates the user
+grant all on bmdb.* to springuser@localhost; 
